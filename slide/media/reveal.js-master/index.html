@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,21 +17,107 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section><h1>Hello, welcome to my internship journey!</h1></section>
+				<section><h2>Hello, welcome to my internship journey!</h2><br>
+					<small>I will document all my researches and my studies through the internship</small></section>
 				<section>
-					<h3>I have several goals</h3>
+					<h3><u>My goals:</u></h3>
 					<p class="fragment"><ul>
 							<li>Build some understanding of digital products and how they relate to AI and ML</li>
 							<li>Understand basic Web3 vocabulary</li>
 							<li>Collaborate with other developers using Github</li>
 							<li>Build JS coding capabilities</li>
-							<li>Build an API that may be used as part of our product
-</li>
+							<li>Build an API that may be used as part of our product</li>
 					</ul></p>
-					<aside class="notes">
-					</aside>
+					<!-- <aside class="notes">
+					</aside> -->
 				</section>
-				<section><u>Next step:</u> creating an API by the end of the week...<br>Let's see how it goes</section>
+				<section>
+					<h3><u>Command lines in Github:</u></h3>
+					<p class="fragment"><ul>
+							<li>First of all, <em>git clone</em> the url of your project to upload the repository on my computer</li>
+							<li>After making changes, <em>git add .</em> to include each file of the repository </li>
+							<li>Then <em>git commit -m "message"</em></li>
+							<li>Finally, <em>git push origin main</em> for instance (the branch where the project is located</li>
+							<li>Your project has been successfully uploaded on github! </li>
+							<li>It's possible to convert a local directory into a repository with <em>git init </em>
+							<Div Align=left><small><a href ="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html" target="_blank">More information</a></small></Div>
+					</ul></p>
+					<!-- <aside class="notes">
+					</aside> -->
+				</section>
+				<section>
+					<h3><u>Useful command lines</u></h3>
+					<p class="fragment"><ul>
+							<li><em>mkdir</em> = to create a new file</li>
+							<li><em>touch</em> = to create a file without any content.</li>
+							<li><em>apt-get -y install</em> = the -y automatic yes to prompts</li>
+							<li><em>ls -a</em> = to show every files, even the hiden ones</li>
+							<li><em>ls -l</em> = to give a long detailed list </li>
+							<li><em>cat</em> = concatenate</li>
+							<li><em>rm</em> = remove </li>
+							<Div Align=left><small><a href ="https://librecours.net/module/sr/lj02/remove-rm-command_1.xhtml" target="_blank">More information</a></small></Div>
+					</ul></p>
+					<!-- <aside class="notes">
+					</aside> -->
+				</section>
+				<section>
+					<h3><u>Node.js</u></h3>
+					<p class="fragment"><ul>
+							<blockquote align =center>Node.js is an <b><FONT color="blue">open source</FONT></b>, cross-platform runtime environment for developing <b><FONT color="blue">server-side and networking applications</b></FONT></blockquote>
+							<small>
+							<li>All APIs of Node.js library are asynchronous, that is, <b>non-blocking</b>. It essentially means a Node.js based server never waits for an API to return data.</li>
+							<li><b><u><FONT color="blue">Express.js</FONT></b></u> is a free and open-source web application framework for Node.js. It is used for bulding web applications quickly and easily. Web applications are web apps that you can run on a web browser. Since Express.js only requires JavaScript, it becomes easier for programmers and developers to build web applications and API.
+								<br>➢ Very easy to learn and also supported everywhere
+								<br>➢ Offers simplicity, flexibility, efficiency, minimalism to the programmers</li>
+							</li>
+						</small>
+					</ul></p>
+					<!-- <aside class="notes">
+					</aside> -->
+				</section>
+				<section>
+					<h3><u>Node.js</u></h3>
+					<p>Here an example of an web application : <br> 
+						<blockquote align=left> <small>
+						const http = require('http'); <br>
+						const PORT = 3000;<br><br>
+
+						const server = http.createServer((req, res) => { <FONT color="grey">//creates an instance of the http.Server class. </FONT><br>
+  						res.writeHead(200, {'Content-Type': 'text/plain'}); <br>
+  						res.end('hello world'); <br>
+					}); <br><br>
+
+						server.listen(PORT, () => { <br>
+  						console.log(`listening on port ${PORT}`) <br>
+					})</small></blockquote>
+ 					<p class="fragment"><ol><small>
+ 						<li><b><u>Client request:</b></u> The <b><u>req</b></u> object investigates which headers and data were sent in the client's request.</li>
+ 						<li><b><u>Server response:</b></u> The server constructs a response by telling the <b><u>res</b></u> object the data and response headers it should answer back with.</li>
+ 					</small></ol></p>
+				</section>
+				<section>
+					<h3><u>Node.js Use Case:</u></h3>
+					<p align="justify"><em><FONT color="red">Netflix</FONT></em>, the world's leading online entertainment network with more than 167 million users, is one of many top companies trusting Node.js for their servers. The reasons why the company chose to use Node.js include:
+					<ol>
+					<li>Application scalability</li>
+					<li>Data-intensive application</li></p>
+					<Div Align=center><small><a href ="https://www.simplilearn.com/tutorials/nodejs-tutorial/what-is-nodejs" target="_blank">More information</a></small></Div>
+				</section>
+
+				<section>
+					<h3><u>Tutorial for Node.js</u></h3>
+					<Div align="justify"><small>
+						➢<a href ="https://docs.microsoft.com/en-us/learn/modules/build-web-api-nodejs-express/2-create-app">https://docs.microsoft.com/en-us/learn/modules/build-web-api-nodejs-express/2-create-app</a><br>
+						➢<a href ="https://docs.microsoft.com/en-us/learn/modules/node-web-routes/2-manage-routes">https://docs.microsoft.com/en-us/learn/modules/node-web-routes/2-manage-routes</a><br>
+
+						➢To create an API: <a href ="https://opensource.com/article/22/7/javascript-api-express">https://opensource.com/article/22/7/javascript-api-express</a><br>
+
+
+				</section>
+				<section>
+				</section>
+
+
 			</div>
 		</div>
 
